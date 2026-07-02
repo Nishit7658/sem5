@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+
+        }
+        body { 
+            font-family: sans-serif; 
+            background-color: #f4f4f9; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        .corner-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            z-index: 1000;
+            height: 130px;
+            width: auto;
+            object-fit: contain;
+        }
+        .corner-image2 {
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 0;
+            z-index: 1000;
+            height: 130px;
+            width: auto;
+            object-fit: contain;
+        }
+        .corner-image3 {
+            position: fixed;
+            top: 150px;
+            right: 0;
+            margin: 0;
+            z-index: 1000;
+            height: 130px;
+            width: auto;
+            object-fit: contain;
+        }
+        .corner-image4 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            z-index: 1000;
+            height: 130px;
+            width: auto;
+            object-fit: contain;
+        }
+        .corner-image5 {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 0;
+            z-index: 1000;
+            height: 130px;
+            width: auto;
+            object-fit: contain;
+        }
+        .card { 
+            background: white; 
+            margin: 15px auto; 
+            max-width: 450px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            padding: 8px 16px; 
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .subject-link {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #222;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.3;
+            padding: 10px 12px;
+            border-radius: 8px;
+            transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
+        }
+
+        .subject-link:hover {
+            color: #ffffff;
+            background: linear-gradient(135deg, #5b6cff, #8b5cf6);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+            transform: scale(1.02);
+        }
+
+        .card:hover {
+            background-color: #f8f8ff;
+            box-shadow: 0 10px 18px rgba(0,0,0,0.14);
+        }
+    </style>
+</head>
+<body>
+    <img class="corner-image" src="https://media1.tenor.com/m/EFDwfjT2GuQAAAAC/spinning-cat.gif" alt="cat dansing" />
+    <img class="corner-image2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F5c%2F38%2F94%2F5c3894aef5719e2b0a8d940d5c7997a1.png&f=1&nofb=1&ipt=4fb6c2fedbca9c11d8cd36de7f228b14181956715671fa4add052139d3b88ee4" alt="he he he he" />
+    <img class="corner-image3" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.printerval.com%2Funsafe%2F960x960%2Fassets.printerval.com%2F2023%2F05%2F06%2F6455f93b42c714.82883659.jpg&f=1&nofb=1&ipt=8038897efbe5ab67de4b5a4042f0f98a5ecef4204dc6552be87a14feb703ce0f" alt="he he he he" />
+    <img class="corner-image4" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.dA58_tYzEOvpzxpK053VvgHaEL%3Fpid%3DApi&f=1&ipt=3cf7bf3434d8d24cf494bf13bb4a3b6f84a14ecd6d9bbfba3388fcf48b35f243&ipo=images" alt="he he he he" />
+    <img class="corner-image5" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4b%2Fd3%2F6b%2F4bd36bbc57101cdfe7834890ef0aa97f.gif&f=1&nofb=1&ipt=d0395d8d286349cf8eb1c05cdfecee65dd9dfd42a9a58e4341b45dbf81e76052" alt="he he he he" />
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000261.pdf" target="_blank">
+            System Software (BE05000261)
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000011.pdf" target="_blank">
+            Societal Internship (BE05000011)
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000171.pdf" target="_blank">
+            Computer Networks (BE05000171)
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000231.pdf" target="_blank">
+            Python for Data Science (BE05000231)
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000281.pdf" target="_blank">
+            Web Application Development (BE05000281)
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="subject-link" href="https://s3-ap-southeast-1.amazonaws.com/gtusitecirculars/Syallbus/BE05000481.pdf" target="_blank">
+            Project Management (BE05000481)
+        </a>
+    </div>
+
+   
+    <a href = "https://www.google.com/maps/place/4407+Neese+Ln,+Moss+Point,+MS+39563,+USA/@30.4433598,-88.5373792,132m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889bebc27490a47f:0x586a180d8e70d818!2s4407+Neese+Ln,+Moss+Point,+MS+39563,+USA!3b1!8m2!3d30.4433273!4d-88.5369331!16s%2Fg%2F11l3gkr84m!3m5!1s0x889beb54073efcdf:0xda977f4072825bb6!8m2!3d30.4434006!4d-88.5371667!16s%2Fg%2F11tnwphqt9?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"><h1>Exam IMP</h1></a>
+
+</body>
+</html>
+
